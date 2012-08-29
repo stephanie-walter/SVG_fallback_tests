@@ -1,0 +1,118 @@
+/*** Base CSS ***/
+
+
+html {font-size: 62.5%;}
+body {
+    background: url(bg.png);
+    color: rgb(41, 41, 41);
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    line-height: 1.5; /* adapt to your design */
+}
+
+/* HTML5 tags */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* soft reset */
+html, body, blockquote, ul, ol, form {margin: 0; padding: 0;}
+/* font-sizing for content */
+p, li, td, th, textarea, caption, pre {font-size: 1.4em;}
+li li, li p, td p, th p, li h1, li h2, li h3, li h4, li h5, li h6, button, input, select {font-size: 100%;}
+h1{font-size: 2em; } /* 24 pixels */
+h2 {font-size: 1.8em; } /* 20 pixels */
+
+pre{
+	font-size:1.6em;
+	overflow: auto;
+}
+
+a,
+a img {
+	border:none;
+}
+.test{
+	max-width:800px;
+	margin:0 auto;
+	border-bottom:2px solid rgb(47, 46, 47);
+	margin-bottom:20px;	
+}
+
+.description{
+	background:rgb(232, 220, 230);
+	margin:40px auto 90px;
+	border-radius: 0.3em;
+	padding:5px 15px;
+	font-style:italic;
+}
+
+.header{
+	width:60%;
+	margin: 10px auto;
+}
+
+.header a{
+	display:block;
+}
+
+.logo{
+	margin:0px auto;
+	display:block;
+}
+.test h1{
+	font-family: 'Arvo', "Times New Roman", Times, serif;
+	color:rgb(146, 121, 142);
+	font-size:2.5em;
+	position:relative;
+	text-align:center;
+	padding:20px 0;
+}
+
+/** create the gradient bottom **/
+.test h1:before,
+ .test h1:after{
+position:absolute;
+ content: ' '; 
+ display:block;
+ height:1px;
+ width:100%;
+background: -moz-linear-gradient(left,  rgba(255,253,252,0) 0%, rgba(191,174,188,0.49) 25%, rgba(191,174,188,1) 51%, rgba(191,174,188,0.98) 52%, rgba(191,174,188,0.51) 75%, rgba(246,251,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,253,252,0)), color-stop(25%,rgba(191,174,188,0.49)), color-stop(51%,rgba(191,174,188,1)), color-stop(52%,rgba(191,174,188,0.98)), color-stop(75%,rgba(191,174,188,0.51)), color-stop(100%,rgba(246,251,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(255,253,252,0) 0%,rgba(191,174,188,0.49) 25%,rgba(191,174,188,1) 51%,rgba(191,174,188,0.98) 52%,rgba(191,174,188,0.51) 75%,rgba(246,251,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(255,253,252,0) 0%,rgba(191,174,188,0.49) 25%,rgba(191,174,188,1) 51%,rgba(191,174,188,0.98) 52%,rgba(191,174,188,0.51) 75%,rgba(246,251,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(255,253,252,0) 0%,rgba(191,174,188,0.49) 25%,rgba(191,174,188,1) 51%,rgba(191,174,188,0.98) 52%,rgba(191,174,188,0.51) 75%,rgba(246,251,255,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(255,253,252,0) 0%,rgba(191,174,188,0.49) 25%,rgba(191,174,188,1) 51%,rgba(191,174,188,0.98) 52%,rgba(191,174,188,0.51) 75%,rgba(246,251,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffdfc', endColorstr='#00f6fbff',GradientType=1 ); /* IE6-9 */
+}
+
+.test h1:before{
+bottom:0px;
+
+}
+
+.test h1:after {
+top:10px;
+ }
+
+
+
+/*** specific for fallbacks **/
+#modernizr_css_fallback img.logo {
+	display:none;
+	}
+#modernizr_css_fallback a{
+	display:block;
+	width:186px;
+	height:235px;
+	background-image: url(logo.png);
+	background-color:transparent;
+	text-indent:-999px;
+	color:transparent;
+	margin:0 auto;
+}
+
+.svg #modernizr_css_fallback img.logo {  
+	display:block;
+	
+}
+.svg #modernizr_css_fallback a{
+	background: none; 
+}
