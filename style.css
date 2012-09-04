@@ -35,7 +35,6 @@ a img {
 	border-bottom:2px solid rgb(47, 46, 47);
 	margin-bottom:20px;	
 }
-
 .description{
 	background:rgb(232, 220, 230);
 	margin:40px auto 90px;
@@ -43,16 +42,13 @@ a img {
 	padding:5px 15px;
 	font-style:italic;
 }
-
 .header{
 	width:60%;
 	margin: 10px auto;
 }
-
 .header a{
 	display:block;
 }
-
 .logo{
 	margin:0px auto;
 	display:block;
@@ -85,9 +81,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffdfc', e
 
 .test h1:before{
 bottom:0px;
-
 }
-
 .test h1:after {
 top:10px;
  }
@@ -108,10 +102,8 @@ top:10px;
 	color:transparent;
 	margin:0 auto;
 }
-
 .svg #modernizr_css_fallback img.logo {  
-	display:block;
-	
+	display:block;	
 }
 .svg #modernizr_css_fallback a{
 	background: none; 

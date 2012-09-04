@@ -15,11 +15,8 @@
 	<script type="text/javascript">
 
 			$(document).ready(function(){
-
 				// all you need to get started
-				$('pre').litelighter();
-
-				
+				$('pre').litelighter();				
 			});
 		</script>
 
@@ -37,7 +34,7 @@
 	</header>
 	<div class="description">
 		<h2>Use of <code> &lt;object&gt; </code> and <code> &lt;img&gt; </code> as fallback </h2>	
-		<p> The link does not work when SVG is used, due to the object tag. </p>
+		<p> The link is behind the SVG logo, due to the object tag. </p>
 		<p> The Fallback works fine without JavaScript activated </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href="#" &gt;
@@ -53,7 +50,7 @@
 <div class="test" id="svg_technique">	
 	<header class="header">
 	<a href="#svg_technique" >
-	 <svg  class="logo" width="186px" height="235px">
+	 <svg  class="logo" width="186" height="235">
 		<g id="nyt_x5F_exporter_x5F_info">
 		</g>
 		<g id="nudged">
@@ -241,9 +238,6 @@
 </div>
 
 
-
-
-
 <div class="test" id="modernizr_css_fallback">	
 	<header class="header">
 	<a href="#modernizr_css_fallback" >
@@ -304,14 +298,10 @@
 		</pre>
 
 		<pre class="code example" data-lllanguage="js" data-llstyle="light">
-window.onload = function(){
-	if(!Modernizr.svg) {
-		var img = $(&#039;img[data-fallback]&#039;);
-		img.each(function(i) {
-		$(this).attr(&#039;src&#039;, $(this).data(&#039;fallback&#039;));
-		});
+if(!Modernizr.svg) {
+		var imgs = $('img[data-fallback]');
+		imgs.attr('src', imgs.data('fallback'));
 	 }
-}
 </pre>		
 	</div>
 </div>
@@ -325,7 +315,7 @@ window.onload = function(){
 	<h1>A very nice headling comes here</h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;img&gt; </code> with modernizR SVG detection to provide <code>data-fallback </code> fallback </h2>	
+		<h2>Use of <code> &lt;img&gt; </code> with JavaScript and <code> &lt; noscript &gt; </code> as fallback </h2>	
 		<p> The link works </p>
 		<p> If JavaScript is desactivated, browser that support SVG will display the PNG fallback </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
@@ -361,12 +351,10 @@ window.onload = function(){
 
 	/* for img_modernizr_js_remplacement_bis */
 	if(!Modernizr.svg) {
-		var img = $('img[data-fallback]');
-		img.each(function(i) {
-		$(this).attr('src', $(this).data('fallback'));
-		});
-
+		var imgs = $('img[data-fallback]');
+		imgs.attr('src', imgs.data('fallback'));
 	 }
+
 }
 </script>
 	
