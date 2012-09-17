@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="fr-FR">
 <head>
 	<meta charset="UTF-8">
 	<title></title>
@@ -30,12 +30,12 @@
 	    <img class="logo" src="logo.png" width="186" height="235"  alt="Logo Geeks and the City" />
 	</object>
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;object&gt; </code> and <code> &lt;img&gt; </code> as fallback </h2>	
-		<p> The link is behind the SVG logo, due to the object tag. </p>
-		<p> The Fallback works fine without JavaScript activated </p>
+		<h2> Utilisation de la balise <code> &lt;object&gt; </code> et <code> &lt;img&gt; </code> en fallback </h2>	
+		<p> Le lien est derrière le logo à cause de la balise object </p>
+		<p> Le fallback fonctionne avec le JavaScript désactivé </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href="#" &gt;
 	&lt;object class="logo" data="logo.svg" width="186" height="235"  type="image/svg+xml"&gt;
@@ -179,17 +179,17 @@
 			 </foreignObject>
 		</svg>	 
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;svg&gt; </code> and <code> &lt;foreignObject&gt; </code> as fallback </h2>	
-		<p> The link shows </p>
-		<p> The Fallback works fine without JavaScript activated </p>
-		<p> This technique is very not flexible, you have to change the whole code when you want to upload a new image</p>
+		<h2>Utilisation de la balise <code> &lt;svg&gt; </code> avec <code> &lt;foreignObject&gt; </code> en fallback </h2>	
+		<p> Le lien est affiché</p>
+		<p> Le fallback fonctionne avec le JavaScript désactivé </p>
+		<p> Cette technique manque de flexibilité, il faut changer le code svg à chaque changement d'image </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#&quot; &gt;
    &lt;svg  class=&quot;logo&quot; width=&quot;186&quot; height=&quot;235&quot;&gt;
-	&lt;!-- the whole code of my SVG file --&gt;
+	&lt;!-- tout le code de mon SVG --&gt;
 	&lt;foreignObject width=&quot;0&quot; height=&quot;0&quot; overflow=&quot;hidden&quot;&gt;
 	 &lt;img class=&quot;logo&quot; src=&quot;logo.png&quot; width=&quot;186&quot; height=&quot;235&quot;  alt=&quot;Logo Geeks and the City&quot; /&gt;
 	 &lt;/foreignObject&gt;
@@ -207,12 +207,12 @@
 		<img class="logo" src="logo.svg" alt="A sample SVG button." width="186" height="235"  alt="Logo Geeks and the City" 
 		onerror="this.removeAttribute('onerror'); this.src='logo.png'" />
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;img&gt; </code> and catching error as fallback</h2>	
-		<p> The link works </p>
-		<p> The Fallback relies on JavaScript and does not work when it's deactivated </p>
+		<h2>Utilisation de la balise <code> &lt;img&gt; </code>  et un catching d'erreurs en JavaScript en fallback</h2>	
+		<p> Le lien fonctionne</p>
+		<p> Le fallback repose sur du JavaScript et ne fonctionne pas s'il est désactivé</p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#catching_error&quot; &gt;
 	&lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot;  alt=&quot;Logo Geeks and the City&quot; 		onerror=&quot;this.removeAttribute(&#039;onerror&#039;); this.src=&#039;logo.png&#039;&quot; /&gt;
@@ -227,13 +227,13 @@
 	<a href="#modernizr_css_fallback" >
 		<img class="logo" src="logo.svg" width="186" height="235"  alt="Logo Geeks and the City" />
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;img&gt; </code> and a CSS image background as fallback </h2>	
-		<p> The link works </p>
-		<p> We have to cheat, the img will display the alt tag, so we hide the image and apply the fallback to the  <code> &lt;a&gt; </code>tag </p>
-		<p> If JavaScript is desactivated, browser that support SVG will display the PNG fallback </p>
+		<h2>Utilisation de la balise <code> &lt;img&gt; </code>  et une image en background CSS en fallback</h2>	
+		<p> Le lien fonctionne</p>
+		<p> Il nous faut tricher, l'image va afficher l'attribut alt pour les navigateurs ne supportant pas SVG, il faut cacher l'image et appliquer le fallback sur la balise <code> &lt;a&gt; </code> </p>
+		<p> Si le JavaScript est désactivé, les navigateurs qui supportent ls SVG vont afficher le PNG </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#modernizr_css_fallback&quot; &gt;
 	&lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; width=&quot;186&quot; height=&quot;235&quot;  alt=&quot;Logo Geeks and the City&quot; /&gt;
@@ -269,12 +269,12 @@
 	<a href="#img_modernizr_js_remplacement_bis" >
 		<img class="logo" src="logo.svg" alt="A sample SVG button." width="186" height="235" data-fallback="logo.png"  alt="Logo Geeks and the City" />
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;img&gt; </code> with modernizR SVG detection to provide <code>data-fallback </code> fallback </h2>	
-		<p> The link works </p>
-		<p> The Fallback relies on JavaScript and does not work when it's deactivated </p>
+		<h2>Utilisation de la balise<code> &lt;img&gt; </code>  avec une dectection du SVG via modernizr et <code>data-fallback </code> en fallback </h2>	
+		<p> Le lien fonctionne</p>
+		<p> Le fallback repose sur du JavaScript et ne fonctionne pas s'il est désactivé </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#img_modernizr_js_remplacement_bis&quot; &gt;
     &lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot; data-fallback=&quot;logo.png&quot;  alt=&quot;Logo Geeks and the City&quot; /&gt;
@@ -296,12 +296,12 @@ if(!Modernizr.svg) {
 	<a href="#img_modernizr_js_remplacement_nojs">
 		<noscript><img class="logo" src="logo.png" alt="A sample SVG button." width="186" height="235" alt="Logo Geeks and the City" /></noscript>
 	</a>
-	<h1>A very nice headling comes here</h1>
+	<h1>Mon super header ici </h1>
 	</header>
 	<div class="description">
-		<h2>Use of <code> &lt;img&gt; </code> with JavaScript and <code> &lt; noscript &gt; </code> as fallback </h2>	
-		<p> The link works </p>
-		<p> If JavaScript is desactivated, browser that support SVG will display the PNG fallback </p>
+		<h2> Utilisation de la balise <code> &lt;img&gt; </code> avec du JavaScript et la balise <code> &lt; noscript &gt; </code> en  fallback </h2>	
+		<p>Le lien fonctionne</p>
+		<p>Si le JavaScript est désactivé, les navigateurs qui supportent ls SVG vont afficher le PNG</p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#img_modernizr_js_remplacement_nojs&quot;&gt;
 	 &lt;noscript&gt;&lt;img class=&quot;logo&quot; src=&quot;logo.png&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot; alt=&quot;Logo Geeks and the City&quot; /&gt;&lt;/noscript&gt;
@@ -317,10 +317,6 @@ if(Modernizr.svg) {
 </pre>		
 	</div>
 </div>
-
-
-<em style="padding:5px 10px;> Thanks to <a href="http://www.geeksandthecity.fr">Geeks and the City</a> for letting me use their logo </em>
-
 
 <script>
 window.onload = function(){
