@@ -204,7 +204,7 @@
 <div class="test" id="catching_error">	
 	<header class="header">
 	<a href="#catching_error" >
-		<img class="logo" src="logo.svg" alt="A sample SVG button." width="186" height="235"  alt="Logo Geeks and the City" 
+		<img class="logo" src="logo.svg" width="186" height="235"  alt="Logo Geeks and the City" 
 		onerror="this.removeAttribute('onerror'); this.src='logo.png'" />
 	</a>
 	<h1>Mon super header ici </h1>
@@ -215,7 +215,7 @@
 		<p> Le fallback repose sur du JavaScript et ne fonctionne pas s'il est désactivé</p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#catching_error&quot; &gt;
-	&lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot;  alt=&quot;Logo Geeks and the City&quot; 		onerror=&quot;this.removeAttribute(&#039;onerror&#039;); this.src=&#039;logo.png&#039;&quot; /&gt;
+	&lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot;  width=&quot;186&quot; height=&quot;235&quot;  alt=&quot;Logo Geeks and the City&quot; 		onerror=&quot;this.removeAttribute(&#039;onerror&#039;); this.src=&#039;logo.png&#039;&quot; /&gt;
 &lt;/a&gt;
 		</pre>		
 	</div>
@@ -267,7 +267,7 @@
 <div class="test" id="img_modernizr_js_remplacement_bis">	
 	<header class="header">
 	<a href="#img_modernizr_js_remplacement_bis" >
-		<img class="logo" src="logo.svg" alt="A sample SVG button." width="186" height="235" data-fallback="logo.png"  alt="Logo Geeks and the City" />
+		<img class="logo" src="logo.svg" width="186" height="235" data-fallback="logo.png"  alt="Logo Geeks and the City" />
 	</a>
 	<h1>Mon super header ici </h1>
 	</header>
@@ -277,7 +277,7 @@
 		<p> Le fallback repose sur du JavaScript et ne fonctionne pas s'il est désactivé </p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#img_modernizr_js_remplacement_bis&quot; &gt;
-    &lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot; data-fallback=&quot;logo.png&quot;  alt=&quot;Logo Geeks and the City&quot; /&gt;
+    &lt;img class=&quot;logo&quot; src=&quot;logo.svg&quot; width=&quot;186&quot; height=&quot;235&quot; data-fallback=&quot;logo.png&quot;  alt=&quot;Logo Geeks and the City&quot; /&gt;
 &lt;/a&gt;
 		</pre>
 
@@ -294,7 +294,7 @@ if(!Modernizr.svg) {
 <div class="test" id="img_modernizr_js_remplacement_nojs">	
 	<header class="header">
 	<a href="#img_modernizr_js_remplacement_nojs">
-		<noscript><img class="logo" src="logo.png" alt="A sample SVG button." width="186" height="235" alt="Logo Geeks and the City" /></noscript>
+		<noscript><img class="logo" src="logo.png"  width="186" height="235" alt="Logo Geeks and the City" /></noscript>
 	</a>
 	<h1>Mon super header ici </h1>
 	</header>
@@ -304,7 +304,7 @@ if(!Modernizr.svg) {
 		<p>Si le JavaScript est désactivé, les navigateurs qui supportent ls SVG vont afficher le PNG</p>
 		<pre class="code example" data-lllanguage="html" data-llstyle="light">
 &lt;a href=&quot;#img_modernizr_js_remplacement_nojs&quot;&gt;
-	 &lt;noscript&gt;&lt;img class=&quot;logo&quot; src=&quot;logo.png&quot; alt=&quot;A sample SVG button.&quot; width=&quot;186&quot; height=&quot;235&quot; alt=&quot;Logo Geeks and the City&quot; /&gt;&lt;/noscript&gt;
+	 &lt;noscript&gt;&lt;img class=&quot;logo&quot; src=&quot;logo.png&quot;  width=&quot;186&quot; height=&quot;235&quot; alt=&quot;Logo Geeks and the City&quot; /&gt;&lt;/noscript&gt;
 &lt;/a&gt;
 		</pre>
 		<pre class="code example" data-lllanguage="js" data-llstyle="light">
